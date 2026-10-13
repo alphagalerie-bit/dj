@@ -6,6 +6,8 @@
 (function (root) {
   var CONFIG = {
     NOME: "Alpha Galerie Creator",  /* aparece no Mercado Pago e no WhatsApp */
+    DESCRITOR: "ALPHACREATOR",      /* nome na fatura do cartão (até 13 letras, sem acento) */
+    BARRA: "A partir de R$ 150 por sessão",  /* barra fixa no celular */
     WPP: "5511926441522",           /* WhatsApp de atendimento */
     INSTAGRAM: { dj: "alpha_space_sp", fundador: "lleomaster" },
 

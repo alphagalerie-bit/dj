@@ -43,6 +43,25 @@
     if (e.target.closest('a[href^="https://wa.me/"]')) track("Contact");
   });
 
+  /* ====== BARRA FIXA NO CELULAR: aparece depois do topo e some na seção de pacotes ====== */
+  var heroEl = document.querySelector(".hero"), pacotesEl = document.getElementById("pacotes");
+  if (CFG.BARRA && heroEl && "IntersectionObserver" in window) {
+    var cta = document.createElement("div"), vendoTopo = true, vendoPacotes = false;
+    cta.className = "cta-bar";
+    cta.innerHTML = '<span class="cta-txt"></span><a class="btn-gold" href="#pacotes">Reservar</a>';
+    var txt = cta.querySelector(".cta-txt");
+    txt.textContent = CFG.BARRA;
+    txt.innerHTML = txt.innerHTML.replace(/(R\$\s?[\d.]+(,\d+)?)/, "<b>$1</b>");
+    document.body.appendChild(cta);
+    document.body.classList.add("has-cta");
+    var atualiza = function () {
+      var m = !vendoTopo && !vendoPacotes;
+      cta.classList.toggle("on", m); document.body.classList.toggle("cta-on", m);
+    };
+    new IntersectionObserver(function (es) { vendoTopo = es[0].isIntersecting; atualiza(); }).observe(heroEl);
+    if (pacotesEl) new IntersectionObserver(function (es) { vendoPacotes = es[0].isIntersecting; atualiza(); }).observe(pacotesEl);
+  }
+
   /* ====== JANELA DE PAGAMENTO ====== */
   var modal = document.createElement("div");
   modal.className = "pay-modal"; modal.setAttribute("role", "dialog"); modal.setAttribute("aria-modal", "true");

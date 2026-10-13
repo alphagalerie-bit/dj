@@ -18,7 +18,16 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0a0a0c">
 <link rel="icon" href="img/logo-ag.jpg">
+<link rel="preload" as="image" href="img/dj-espaco.webp" fetchpriority="high">
 <link rel="stylesheet" href="assets/checkout.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Alpha Galerie Creator",
+ "description":"Estúdio para DJs em Perdizes, São Paulo: treino com Pioneer CDJ-200 + DJM-600 e estúdio completo com painel LED 3×3 m para gravar o seu set.",
+ "url":"https://djcreator.alphagalerie.com/","image":"https://djcreator.alphagalerie.com/img/og-dj.jpg",
+ "address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"},
+ "areaServed":"Perdizes, São Paulo","priceRange":"R$ 150 – R$ 1.000",
+ "sameAs":["https://www.instagram.com/alpha_space_sp/"]}
+</script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Sora:wght@300;400;500;600&display=swap');
 
@@ -317,6 +326,20 @@
     .btn-gold, .btn-line { justify-content:center; }
     .equip-photo { height:340px; }
   }
+  /* ============ TOPO COM FOTO ============ */
+  .hero.com-foto {
+    background:
+      linear-gradient(90deg, rgba(10,10,12,0.95) 0%, rgba(10,10,12,0.78) 40%, rgba(10,10,12,0.12) 100%),
+      linear-gradient(180deg, rgba(10,10,12,0.5) 0%, transparent 30%, rgba(10,10,12,0.92) 100%),
+      url('img/dj-espaco.webp') center 40% / cover no-repeat;
+  }
+  @media (max-width:860px) {
+    .hero.com-foto {
+      background:
+        linear-gradient(180deg, rgba(10,10,12,0.72) 0%, rgba(10,10,12,0.82) 50%, rgba(10,10,12,0.97) 100%),
+        url('img/dj-espaco.webp') 62% 30% / cover no-repeat;
+    }
+  }
 </style>
 </head>
 <body>
@@ -327,14 +350,14 @@
 </nav>
 
 <!-- HERO -->
-<header class="hero" id="top">
+<header class="hero com-foto" id="top">
   <div class="hero-content">
     <div class="hero-eyebrow"><span class="line-mark"></span> Perdizes · São Paulo</div>
     <h1 class="serif">
-      <span class="line">Seu espaço de</span>
-      <span class="line"><span class="gold">criação</span> em Perdizes</span>
+      <span class="line">Seu set com</span>
+      <span class="line">cara de <span class="gold">festival</span></span>
     </h1>
-    <p class="hero-sub">Cultura, arte e entretenimento num só lugar. Um espaço pra <strong>desconectar do mundo</strong>, mergulhar na música, conectar com outras pessoas — e sair com o seu melhor trabalho.</p>
+    <p class="hero-sub">Painel LED de 3×3 m, Pioneer CDJ-200 + DJM-600 e lounge em Perdizes. <strong>Treine sem incomodar ninguém e grave o conteúdo que o seu feed merece.</strong></p>
     <div class="hero-actions">
       <a href="#pacotes" class="btn-gold">Reservar meu horário →</a>
       <a href="#pacotes" class="btn-line">Explorar o espaço <span class="arrow">↓</span></a>
@@ -372,7 +395,7 @@
       <h3 class="serif">O painel já é o <span class="gold">cenário</span></h3>
       <p>Você não monta nada. Liga o LED, posiciona o celular — e seu set já sai parecendo produção de festival. O ambiente faz o trabalho pelo seu conteúdo. (Painel LED incluso no Estúdio completo.)</p>
     </div>
-    <div class="show-img-full"><div class="frame"><img src="img/dj-espaco.webp" alt="DJ tocando com o painel LED ao fundo e convidados no lounge" style="object-position:center 42%"></div></div>
+    <div class="show-img-full"><div class="frame"><img src="img/telao.webp" alt="Painel LED exibindo um show no lounge" style="object-position:center 40%" loading="lazy"></div></div>
   </div>
 
   <div class="show-block reveal">
@@ -380,7 +403,7 @@
       <h3 class="serif">Lounge pra <span class="gold">conectar</span></h3>
       <p>Climatizado, com vibe, espaço pra respirar entre takes. Você conecta com quem chegou junto — troca ideia, colabora, descobre parceria. Esse encontro não acontece num quarto sozinho.</p>
     </div>
-    <div class="show-img-full"><div class="frame"><img src="img/lounge.webp" alt="Lounge interno"></div></div>
+    <div class="show-img-full"><div class="frame"><img src="img/lounge.webp" alt="Lounge com sofá, painel LED e luz baixa" style="object-position:center 60%" loading="lazy"></div></div>
   </div>
 
   <div class="show-block reveal">
@@ -388,7 +411,7 @@
       <h3 class="serif">Varanda com <span class="gold">vista aberta</span></h3>
       <p>Ar livre, vista da cidade, um respiro entre um set e outro. Às vezes a melhor ideia do set vem num momento assim — longe do barulho, longe de tudo.</p>
     </div>
-    <div class="show-img-full"><div class="frame"><img src="img/varanda.webp" alt="Lounge com varanda no fim de tarde"></div></div>
+    <div class="show-img-full"><div class="frame"><img src="img/varanda.webp" alt="Lounge com varanda no fim de tarde" loading="lazy"></div></div>
   </div>
 
 </section>
