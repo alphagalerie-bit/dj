@@ -9,6 +9,11 @@
     WPP: "5511926441522",           /* WhatsApp de atendimento */
     INSTAGRAM: { dj: "alpha_space_sp", fundador: "lleomaster" },
 
+    /* Horários. SESSOES: quando dá para treinar e gravar (depois que o
+       comercial do prédio fecha). ATENDIMENTO: quando o WhatsApp responde. */
+    SESSOES: "18h às 6h",
+    ATENDIMENTO: "10h às 21h",
+
     /* Pixel da Meta (só o número). Vazio = desligado. */
     META_PIXEL: "",
 
@@ -17,15 +22,15 @@
       { id: "treino", nome: "Treino", pagina: "/",
         uso: "2 horas na área de ensaio com Pioneer CDJ-200 + DJM-600",
         pix: 150, cartao: 158, sinal: 1,
-        nota: "2 horas · o horário é confirmado no WhatsApp" },
+        nota: "2 horas · confirmamos o horário no WhatsApp" },
       { id: "videoset", nome: "Videoset", pagina: "/",
         uso: "2 horas com painel LED 3×3 m, iluminação e som",
         pix: 300, cartao: 316, sinal: 1,
-        nota: "2 horas · o horário é confirmado no WhatsApp" },
+        nota: "2 horas · confirmamos o horário no WhatsApp" },
       { id: "pacote", nome: "Pacote fundador 10 h", pagina: "/",
         uso: "10 horas de Videoset com painel LED · blocos de 2 h",
         pix: 1000, cartao: 1045, sinal: 1,
-        nota: "10 horas de Videoset para usar em até 90 dias · R$ 100 por hora" }
+        nota: "10 h de Videoset em até 90 dias · R$ 100 por hora" }
     ]
   };
 
