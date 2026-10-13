@@ -4,7 +4,7 @@ Página de vendas para DJs em Perdizes, SP: treino com Pioneer, estúdio complet
 
 ## Onde mexer
 
-- **`config.js`**: preços (Pix e cartão), WhatsApp, Instagram e Pixel da Meta. Mudou aqui, muda na página e no Mercado Pago.
+- **`config.js`**: preços (Pix e cartão), horários, WhatsApp, Instagram, Pixel da Meta, nome na fatura do cartão e texto da barra fixa do celular. Mudou aqui, muda na página e no Mercado Pago.
 - **`index.html`**: textos da página.
 - **`img/`**: fotos. Trocar um arquivo pelo mesmo nome troca a foto.
 

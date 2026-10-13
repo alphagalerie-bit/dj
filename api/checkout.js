@@ -14,6 +14,11 @@ function siteUrl(req) {
   return "https://" + host;
 }
 
+/* Data de hoje em São Paulo, no formato ano-mês-dia */
+function hojeSP() {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "America/Sao_Paulo" }).format(new Date());
+}
+
 function limpa(v, max) {
   return String(v || "").replace(/[\u0000-\u001f]/g, " ").trim().slice(0, max);
 }
@@ -45,7 +50,9 @@ module.exports = async function handler(req, res) {
   const token = process.env.MP_ACCESS_TOKEN;
   if (!token) return res.status(503).json({ erro: "pagamento não configurado" });
 
-  const b = typeof req.body === "string" ? JSON.parse(req.body || "{}") : (req.body || {});
+  let b;
+  try { b = typeof req.body === "string" ? JSON.parse(req.body || "{}") : (req.body || {}); }
+  catch (e) { return res.status(400).json({ erro: "pedido inválido" }); }
   const oferta = CONFIG.OFERTAS.find(o => o.id === b.oferta);
   const pay = b.pay === "cartao" ? "cartao" : "pix";
   if (!oferta) return res.status(400).json({ erro: "oferta inválida" });
@@ -61,6 +68,7 @@ module.exports = async function handler(req, res) {
   if (oferta.id === "show") {
     show = CONFIG.SHOWS.find(s => s.id === b.show);
     if (!show || !show.disponivel) return res.status(400).json({ erro: "data indisponível" });
+    if (show.data && show.data <= hojeSP()) return res.status(400).json({ erro: "data encerrada" });
     titulo += " · " + show.artista + " " + show.dia.replace(/^.*· /, "") + " · " + show.horario;
   }
 
@@ -109,7 +117,7 @@ module.exports = async function handler(req, res) {
       payer: Object.assign({ name: nome }, email ? { email } : {}),
       external_reference: ref,
       metadata,
-      statement_descriptor: "ALPHAHOUSE",
+      statement_descriptor: CONFIG.DESCRITOR || "ALPHAHOUSE",
       back_urls: {
         success: volta.replace("{st}", "aprovado"),
         pending: volta.replace("{st}", "pendente"),
