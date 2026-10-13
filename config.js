@@ -23,14 +23,14 @@
         uso: "2 horas na área de ensaio com Pioneer CDJ-200 + DJM-600",
         pix: 150, cartao: 158, sinal: 1,
         nota: "2 horas · confirmamos o horário no WhatsApp" },
-      { id: "videoset", nome: "Videoset", pagina: "/",
+      { id: "videoset", nome: "Estúdio completo", pagina: "/",
         uso: "2 horas com painel LED 3×3 m, iluminação e som",
         pix: 300, cartao: 316, sinal: 1,
         nota: "2 horas · confirmamos o horário no WhatsApp" },
       { id: "pacote", nome: "Pacote fundador 10 h", pagina: "/",
-        uso: "10 horas de Videoset com painel LED · blocos de 2 h",
+        uso: "10 horas de estúdio completo com painel LED · blocos de 2 h",
         pix: 1000, cartao: 1045, sinal: 1,
-        nota: "10 h de Videoset em até 90 dias · R$ 100 por hora" }
+        nota: "10 h de estúdio completo em até 90 dias · R$ 100 por hora" }
     ]
   };
 

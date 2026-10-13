@@ -36,7 +36,7 @@
   background:#13251d; border:1px solid rgba(127,209,168,0.4); border-radius:4px; padding:16px 18px; font-size:14px; }
 .paid-bar b { color:#7FD1A8; }
 .paid-bar .btn-gold { padding:12px 20px; font-size:13px; }
-.fundador { margin-top:28px; border:1px solid var(--gold-deep); border-radius:4px; padding:28px 30px;
+.fundador { max-width:800px; margin:28px auto 0; border:1px solid var(--gold-deep); border-radius:4px; padding:28px 30px;
   background:linear-gradient(135deg, rgba(212,175,55,0.08), var(--ink-card));
   display:flex; flex-wrap:wrap; gap:22px; align-items:center; justify-content:space-between; }
 .fundador .card-badge { position:static; display:inline-block; margin-bottom:12px; }
