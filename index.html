@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alpha Galerie Creator — Estúdio para DJs em Perdizes, SP</title>
-<meta name="description" content="Treino com Pioneer CDJ-200 + DJM-600 e estúdio completo com painel LED 3×3 m para gravar o seu set em Perdizes, São Paulo. Reserve e pague pelo Mercado Pago.">
+<meta name="description" content="Treino com mixer Pioneer DJM-600 e estúdio completo com painel LED 3×3 m para gravar o seu set em Perdizes, São Paulo. Reserve e pague pelo Mercado Pago.">
 <!-- Prévia do link (WhatsApp/Instagram) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://djcreator.alphagalerie.com/">
@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="assets/checkout.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"Alpha Galerie Creator",
- "description":"Estúdio para DJs em Perdizes, São Paulo: treino com Pioneer CDJ-200 + DJM-600 e estúdio completo com painel LED 3×3 m para gravar o seu set.",
+ "description":"Estúdio para DJs em Perdizes, São Paulo: treino com mixer Pioneer DJM-600 e estúdio completo com painel LED 3×3 m para gravar o seu set.",
  "url":"https://djcreator.alphagalerie.com/","image":"https://djcreator.alphagalerie.com/img/og-dj.jpg",
  "address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"},
  "areaServed":"Perdizes, São Paulo","priceRange":"R$ 150 – R$ 1.000",
@@ -248,6 +248,7 @@
   .equip-photo-cap .eyebrow { font-size:11px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; }
   .equip-photo-cap .title { font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:600; color:var(--bone); }
   .specs { display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:1px solid var(--line); margin-top:48px; }
+  .specs.tres { grid-template-columns:repeat(3,1fr); }
   .spec { padding:36px 28px; border-right:1px solid var(--line); }
   .spec:last-child { border-right:none; }
   .spec-label { font-size:10px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold-soft); margin-bottom:14px; }
@@ -317,7 +318,9 @@
     .show-head, .show-img-full { padding:0 20px; }
     .show-block { margin-bottom:72px; }
     .cards { grid-template-columns:1fr; gap:20px; }
-    .specs { grid-template-columns:1fr 1fr; }
+    .specs, .specs.tres { grid-template-columns:1fr; }
+    .specs.tres .spec { border-right:none; border-bottom:1px solid var(--line); }
+    .specs.tres .spec:last-child { border-bottom:none; }
     .spec:nth-child(2) { border-right:none; }
     .spec:nth-child(1), .spec:nth-child(2) { border-bottom:1px solid var(--line); }
     .founder-grid { grid-template-columns:1fr; gap:40px; }
@@ -357,7 +360,7 @@
       <span class="line">Seu set com</span>
       <span class="line">cara de <span class="gold">festival</span></span>
     </h1>
-    <p class="hero-sub">Painel LED de 3×3 m, Pioneer CDJ-200 + DJM-600 e lounge em Perdizes. <strong>Treine sem incomodar ninguém e grave o conteúdo que o seu feed merece.</strong></p>
+    <p class="hero-sub">Painel LED de 3×3 m, mixer Pioneer DJM-600 e lounge em Perdizes. <strong>Treine sem incomodar ninguém e grave o conteúdo que o seu feed merece.</strong></p>
     <div class="hero-actions">
       <a href="#pacotes" class="btn-gold">Reservar meu horário →</a>
       <a href="#pacotes" class="btn-line">Explorar o espaço <span class="arrow">↓</span></a>
@@ -431,11 +434,10 @@
         <div class="card-tag">Pra praticar sem incomodar ninguém</div>
         <div class="card-price"><span class="cur">R$</span><span class="val">150</span></div>
         <div class="card-unit">2 horas · área de ensaio</div>
-        <div class="card-alt">Traz seu notebook ou usa o setup da casa</div>
+        <div class="card-alt">Traga seus players, controladora ou notebook</div>
         <ul>
-          <li>2× Pioneer CDJ-200</li>
           <li>Pioneer DJM-600 (4 canais)</li>
-          <li>Headphone Pioneer</li>
+          <li>Som profissional</li>
           <li>Sem barulho pra casa</li>
         </ul>
         <a href="#" data-oferta="treino" class="card-btn">Garantir treino</a>
@@ -477,37 +479,22 @@
 <section class="equipment pad">
   <div class="wrap">
     <div class="equip-intro reveal">
-      <div class="section-tag">Setup profissional</div>
-      <h2 class="big serif">Pioneer. <span class="gold">Igual ao clube.</span></h2>
-      <p>Dois players, mixer de 4 canais e headphone — o mesmo setup que você encontra numa booth de clube. Esse é o equipamento da casa; se você toca com notebook, pode trazer o seu pra ensaiar também.
+      <div class="section-tag">Setup</div>
+      <h2 class="big serif">Traga o seu set. <span class="gold">A casa completa.</span></h2>
+      <p>A casa tem o mixer Pioneer DJM-600 de 4 canais e som profissional. Você traz os players, a controladora ou o notebook que já usa — do jeito que toca na gig.
       <strong>O painel LED é exclusivo de quem vai gravar.</strong></p>
     </div>
 
-    <div class="reveal">
-      <div class="equip-photo">
-        <img src="img/equipamento.jpg" alt="Área de ensaio Pioneer">
-        <div class="equip-photo-cap">
-          <div class="eyebrow">Área de ensaio</div>
-          <div class="title serif">2× Pioneer CDJ-200 + DJM-600</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="specs reveal">
-      <div class="spec">
-        <div class="spec-label">Players</div>
-        <div class="spec-name serif">Pioneer CDJ-200</div>
-        <div class="spec-desc">2 unidades · padrão de clube · jog wheel</div>
-      </div>
+    <div class="specs tres reveal">
       <div class="spec">
         <div class="spec-label">Mixer</div>
         <div class="spec-name serif">Pioneer DJM-600</div>
         <div class="spec-desc">4 canais · Beat FX · nível profissional</div>
       </div>
       <div class="spec">
-        <div class="spec-label">Monitor</div>
-        <div class="spec-name serif">Pioneer HDJ</div>
-        <div class="spec-desc">Headphone profissional · cue</div>
+        <div class="spec-label">Seu equipamento</div>
+        <div class="spec-name serif">Do seu jeito</div>
+        <div class="spec-desc">Players, controladora ou notebook · traga o seu fone</div>
       </div>
       <div class="spec">
         <div class="spec-label">Gravação</div>
@@ -562,7 +549,7 @@
       <h2 class="big serif">Dúvidas</h2>
     </div>
     <div class="reveal">
-      <div class="faq-item"><div class="faq-q">Preciso levar meu equipamento? <span class="faq-icon"></span></div><div class="faq-a"><p>Não. A área de ensaio já vem com 2× Pioneer CDJ-200, mixer DJM-600 e headphone — esse é o setup da casa. Se você toca com notebook, pode trazer o seu pra ensaiar também.</p></div></div>
+      <div class="faq-item"><div class="faq-q">Preciso levar meu equipamento? <span class="faq-icon"></span></div><div class="faq-a"><p>Sim, cada DJ traz o seu: players, controladora ou notebook, e o fone. A casa tem o mixer Pioneer DJM-600 de 4 canais e som profissional.</p></div></div>
       <div class="faq-item"><div class="faq-q">Dá pra gravar com qualidade profissional? <span class="faq-icon"></span></div><div class="faq-a"><p>O iPhone já entrega muito bem no Estúdio completo, com o painel LED ao fundo. Se quiser câmera 4K e operador, a gente monta um pacote à parte.</p></div></div>
       <div class="faq-item"><div class="faq-q">Como funciona o pagamento? <span class="faq-icon"></span></div><div class="faq-a"><p>Pelo Mercado Pago, no Pix ou no cartão à vista, direto nos botões dos pacotes. Se o horário que você quer não estiver livre, devolvemos 100%.</p></div></div>
       <div class="faq-item"><div class="faq-q">Qual o endereço e horário? <span class="faq-icon"></span></div><div class="faq-a"><p>Perdizes, São Paulo. As sessões de treino e gravação acontecem das <span data-cfg="SESSOES">18h às 6h</span>, quando o comercial do prédio já fechou. O agendamento pelo WhatsApp funciona das <span data-cfg="ATENDIMENTO">10h às 21h</span>, e o endereço completo vai por mensagem ao confirmar a reserva.</p></div></div>
