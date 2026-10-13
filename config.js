@@ -8,7 +8,7 @@
     NOME: "Alpha Galerie Creator",  /* aparece no Mercado Pago e no WhatsApp */
     DESCRITOR: "ALPHACREATOR",      /* nome na fatura do cartão (até 13 letras, sem acento) */
     BARRA: "A partir de R$ 150 por sessão",  /* barra fixa no celular */
-    WPP: "5511926441522",           /* WhatsApp de atendimento */
+    WPP: "5511942920076",           /* WhatsApp de atendimento */
     INSTAGRAM: { dj: "alpha_space_sp", fundador: "lleomaster" },
 
     /* Horários. SESSOES: quando dá para treinar e gravar (depois que o
@@ -22,7 +22,7 @@
     /* Preços com a taxa do Mercado Pago embutida: pix (0,99%) e cartão à vista (4,98%). */
     OFERTAS: [
       { id: "treino", nome: "Treino", pagina: "/",
-        uso: "2 horas na área de ensaio com Pioneer CDJ-200 + DJM-600",
+        uso: "2 horas com mixer Pioneer DJM-600 · traga seu equipamento",
         pix: 150, cartao: 158, sinal: 1,
         nota: "2 horas · confirmamos o horário no WhatsApp" },
       { id: "videoset", nome: "Estúdio completo", pagina: "/",
