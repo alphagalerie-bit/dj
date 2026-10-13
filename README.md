@@ -1,6 +1,6 @@
 # Alpha Galerie Creator · estúdio para DJs
 
-Página de vendas para DJs em Perdizes, SP: treino com Pioneer, videoset com painel LED, pacote fundador de 10 horas e aulas de DJ.
+Página de vendas para DJs em Perdizes, SP: treino com Pioneer, estúdio completo com painel LED para gravação e pacote fundador de 10 horas.
 
 ## Onde mexer
 
